@@ -2,13 +2,13 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "A recipe applications",
+  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "author": "Tanzeem",
   "license": "ISC",
-  "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.23.9",
     "core-js": "^3.35.1",
-    "fractional": "^1.0.0",
+    "fracty": "^1.0.11",
     "regenerator-runtime": "^0.14.1"
   }
 }
