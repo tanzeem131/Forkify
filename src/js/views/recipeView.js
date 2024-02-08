@@ -15,13 +15,15 @@ class RecipeView extends View {
 
   addHandlerUpdateServings(handler) {
     this._parentElement.addEventListener('click', function (e) {
-      const btn = e.target.closest('btn--update-servings');
+      const btn = e.target.closest('.btn--update-servings');
       if (!btn) return;
       console.log(btn);
-      const { updateTo } = btn.dataset;
-      if (+updateTo > 0) handler(+updateTo);
+      const updateTo = +btn.dataset.updateTo;
+      console.log(updateTo);
+      if (updateTo > 0) handler(updateTo);
     });
   }
+
   _generateMarkup() {
     return `
       <figure class="recipe__fig">
