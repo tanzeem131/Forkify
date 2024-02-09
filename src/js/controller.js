@@ -70,6 +70,11 @@ const controlPagination = function (goToPage) {
   paginationView.render(model.state.search);
 };
 
+const controlAddBookmark = function () {
+  module.addBookmark(model.state.recipe);
+  console.log(model.state.recipe);
+};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
