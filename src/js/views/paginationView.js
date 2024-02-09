@@ -29,6 +29,7 @@ class PaginationView extends View {
     if (curPage === numPages) {
       return this._generateMarkupButton(-1);
     }
+
     //Other page
     if (curPage < numPages) {
       return `${
