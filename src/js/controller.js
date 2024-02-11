@@ -9,9 +9,9 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import { async } from 'regenerator-runtime';
 
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }
 
 const controlRecipes = async function () {
   try {
@@ -20,18 +20,20 @@ const controlRecipes = async function () {
     if (!id) return;
     recipeView.renderSpinner();
 
-    //Upadate results view to mark selected
+    //0.Upadate results view to mark selected
     resultsView.update(model.getSearchResultsPage());
-
-    bookmarksView.update(model.state.bookmarks);
 
     //1.Loading recipe
     await model.loadRecipe(id);
 
-    //Redering recipe
+    //2.Redering recipe
     recipeView.render(model.state.recipe);
+
+    //3.Update bookmarks view
+    bookmarksView.update(model.state.bookmarks);
   } catch (err) {
     recipeView.renderError();
+    console.err(err);
   }
 };
 
@@ -85,7 +87,12 @@ const controlAddBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmarks(controlAddBookmark);
