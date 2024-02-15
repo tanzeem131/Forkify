@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.23.9",
+    "config.js": "^0.1.0",
     "core-js": "^3.35.1",
     "fracty": "^1.0.11",
     "regenerator-runtime": "^0.14.1"
