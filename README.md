@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-    <img src="https://github.com/tanzeem131/Forkify/blob/main/src/img/Screenshot%202024-02-19%20145625.png" width="100%" height="100%">
+    <img src="https://github.com/tanzeem131/Forkify/blob/main/src/img/previewImg1.png" width="100%" height="100%">
   </a>
 
   <p align="center">
