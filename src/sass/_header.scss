@@ -89,7 +89,7 @@
     svg {
       height: 2.4rem;
       width: 2.4rem;
-      fill: $color-primary;
+      fill: var(--color-primary);
       margin-right: 0.7rem;
       transform: translateY(-1px);
     }

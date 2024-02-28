@@ -96,7 +96,6 @@ export const addBookmark = function (recipe) {
 
   //Mark current recipe as bookmarked
   if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;
-
   persistBookmark();
 };
 
@@ -107,7 +106,6 @@ export const deleteBookmark = function (id) {
 
   //Mark current recipe as NOT bookmarked
   if (id === state.recipe.id) state.recipe.bookmarked = false;
-
   persistBookmark();
 };
 
@@ -135,7 +133,6 @@ export const uploadRecipe = async function (newRecipe) {
           );
 
         const [quantity, unit, description] = ingArr;
-
         return { quantity: quantity ? +quantity : null, unit, description };
       });
 

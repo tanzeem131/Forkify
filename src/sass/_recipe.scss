@@ -19,8 +19,8 @@
       left: 0;
       background-image: linear-gradient(
         to right bottom,
-        $color-grad-1,
-        $color-grad-2
+        var(--color-grad-1),
+        var(--color-grad-2)
       );
       opacity: 0.6;
     }
@@ -52,8 +52,8 @@
       padding: 1.3rem 2rem;
       background-image: linear-gradient(
         to right bottom,
-        $color-grad-1,
-        $color-grad-2
+        var(--color-grad-1),
+        var(--color-grad-2)
       );
     }
 
@@ -84,7 +84,7 @@
   &__info-icon {
     height: 2.35rem;
     width: 2.35rem;
-    fill: $color-primary;
+    fill: var(--color-primary);
     margin-right: 1.15rem;
   }
 
@@ -115,7 +115,7 @@
     svg {
       height: 2.25rem;
       width: 2.25rem;
-      fill: $color-primary;
+      fill: var(--color-primary);
     }
   }
 
@@ -145,7 +145,7 @@
   &__icon {
     height: 2rem;
     width: 2rem;
-    fill: $color-primary;
+    fill: var(--color-primary);
     margin-right: 1.1rem;
     flex: 0 0 auto;
     margin-top: 0.1rem;

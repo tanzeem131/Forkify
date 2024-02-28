@@ -12,6 +12,12 @@
 
     <link rel="stylesheet" href="src/sass/main.scss" />
     <script type="module" src="src/js/controller.js"></script>
+    <script type="module">
+      let darkMode = document.getElementById('btn-toggle');
+      darkMode.onclick = function () {
+        document.body.classList.toggle('dark_theme');
+      };
+    </script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -19,7 +25,12 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="src/img/logo.png" alt="Logo" class="header__logo" />
+        <img
+          id="logoChange"
+          src="src/img/logo.png"
+          alt="Logo"
+          class="header__logo"
+        />
         <form class="search">
           <input
             type="text"
@@ -80,14 +91,14 @@
                 </ul>
               </div>
             </li>
-            <!-- <li class="nav__item">
-              <button class="nav__btn btn-toggle nav__btn--add-recipe">
+            <li class="nav__item">
+              <button id="btn-toggle" class="nav__btn nav__btn--add-recipe">
                 <svg class="nav__icon">
-                  <use href="src/img/icons.svg#icon-dark"></use>
+                  <use href="src/img/icons.svg#icon-owl"></use>
                 </svg>
-                <span>DARK MODE</span>
+                <span>Mode</span>
               </button>
-            </li> -->
+            </li>
           </ul>
         </nav>
       </header>

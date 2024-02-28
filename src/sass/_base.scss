@@ -1,15 +1,25 @@
-// $color-primary: #f59a83;
-$color-primary: #f38e82;
-$color-grad-1: #fbdb89;
-$color-grad-2: #f48982;
-
 $color-grey-light-1: #f9f5f3; // Light background
 $color-grey-light-2: #f2efee; // Light lines
 $color-grey-light-3: #d3c7c3; // Light text (placeholder)
 $color-grey-dark-1: #615551; // Normal text
 $color-grey-dark-2: #918581; // Lighter text
 
-$gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
+:root {
+  --color-primary: #f38e82;
+  --color-grad-1: #fbdb89;
+  --color-grad-2: #f48982;
+}
+.dark_theme {
+  --color-primary: #141212;
+  --color-grad-1: #2f2d29;
+  --color-grad-2: #312d2c5e;
+}
+
+$gradient: linear-gradient(
+  to right bottom,
+  var(--color-grad-1),
+  var(--color-grad-2)
+);
 
 $bp-large: 78.15em; // 1250px
 $bp-medium: 61.25em; // 980px
@@ -46,16 +56,6 @@ body {
   background-repeat: no-repeat;
   min-height: calc(100vh - 2 * 4vw);
   transition: background-color 0.5s ease;
-}
-
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-.light-mode {
-  background-color: #fff;
-  color: #333;
 }
 
 .container {

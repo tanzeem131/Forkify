@@ -39,8 +39,8 @@
       left: 0;
       background-image: linear-gradient(
         to right bottom,
-        $color-grad-1,
-        $color-grad-2
+        var(--color-grad-1),
+        var(--color-grad-2)
       );
       opacity: 0.4;
     }
@@ -65,7 +65,7 @@
   &__title {
     grid-column: 1/-1;
     font-size: 1.45rem;
-    color: $color-primary;
+    color: var(--color-primary);
     text-transform: uppercase;
     font-weight: 600;
 
@@ -99,7 +99,7 @@
     svg {
       height: 1.2rem;
       width: 1.2rem;
-      fill: $color-primary;
+      fill: var(--color-primary);
     }
   }
 }
