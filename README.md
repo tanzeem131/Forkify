@@ -14,6 +14,11 @@
   </p>
 </p>
 
+## Forkify in Dark mode
+<p>
+    <img src="https://github.com/tanzeem131/Forkify/blob/main/src/img/previewImg2.png" width="100%" height="100%">  
+</p>
+
 ## About The Project
 
 Forkify is a vanilla JavaScript application that interacts with the **Forkify API v2 Documentation** to fetch and display recipe food data. The user can search for a specific recipe, and save to a favorites list via local storage. The user can easily increase or decrease servings as per his need and can view detailed directions.
